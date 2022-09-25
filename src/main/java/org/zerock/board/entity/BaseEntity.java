@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * packageName : com.zerock.guestbook.entity
  * className : BaseEntity
  * user : jwlee
- * date : 2022/09/23
+ * date : 2022/09/25
  */
 @MappedSuperclass
 @EntityListeners(value = { AuditingEntityListener.class})
