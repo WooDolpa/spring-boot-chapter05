@@ -40,4 +40,13 @@ public class Board extends BaseEntity{
         this.writer = writer;
     }
 
+    @Override
+    public String toString() {
+        return "Board{" +
+                "bno=" + bno +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", writer=" + writer +
+                '}';
+    }
 }

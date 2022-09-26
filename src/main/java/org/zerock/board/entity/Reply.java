@@ -39,4 +39,14 @@ public class Reply extends BaseEntity{
         this.replyer = replyer;
         this.board = board;
     }
+
+    @Override
+    public String toString() {
+        return "Reply{" +
+                "rno=" + rno +
+                ", text='" + text + '\'' +
+                ", replyer='" + replyer + '\'' +
+                ", board=" + board +
+                '}';
+    }
 }

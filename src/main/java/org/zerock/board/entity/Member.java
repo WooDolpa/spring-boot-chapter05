@@ -29,4 +29,13 @@ public class Member extends BaseEntity{
         this.password = password;
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
