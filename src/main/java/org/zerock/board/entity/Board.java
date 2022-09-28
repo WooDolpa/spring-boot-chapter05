@@ -4,12 +4,10 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 import static javax.persistence.GenerationType.*;
+import static javax.persistence.FetchType.LAZY;
 
 /**
  * packageName : org.zerock.board.entity
@@ -29,7 +27,7 @@ public class Board extends BaseEntity{
     private String title;
     private String content;
 
-    @ManyToOne
+    @ManyToOne(fetch = LAZY)
     private Member writer;
 
     @Builder
