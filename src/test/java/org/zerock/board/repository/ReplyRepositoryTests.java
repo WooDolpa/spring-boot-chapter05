@@ -54,4 +54,13 @@ public class ReplyRepositoryTests {
         System.out.println(reply);
         System.out.println(reply.getBoard());
     }
+
+    @Test
+    public void 댓글읽기_3(){
+        Optional<Reply> result = replyRepository.findById(15L);
+        Reply reply = result.get();
+        System.out.println(reply);
+        System.out.println(reply.getBoard());
+    }
+
 }
